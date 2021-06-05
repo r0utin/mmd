@@ -1,0 +1,582 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">مشهد تک</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="facebook_app_id" translatable="false">fb_id</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fbfb_id</string>
+
+    <string name="footer"></string>
+
+    <string name="search">جستجو در</string>
+
+    <string name="most_popular_poroducts">پر فروش ترین محصولات</string>
+
+    <string name="selected_poroducts">محصولات انتخابی</string>
+
+    <string name="related_product">محصولات مشابه</string>
+
+    <string name="special_offer">ویژه های امروز</string>
+
+    <string name="whatsapp_not_installed">واتس اپ نصب نیست</string>
+
+    <string name="view_all">مشاهده همه</string>
+
+    <string name="view">مشاهده</string>
+
+    <string name="recently_view_product">بازدید های اخیر شما</string>
+
+    <string name="my_orders">سفارشات من</string>
+
+    <string name="my_address">آدرس های من</string>
+
+    <string name="currency">واحد پولی</string>
+
+    <string name="language">انتخاب زبان</string>
+
+    <string name="address">آدرس</string>
+
+    <string name="my_reward">کوپن های تخفیف</string>
+
+    <string name="rate_app">امتیاز میدم</string>
+
+    <string name="account_setting">تنظیمات حساب کاربری</string>
+
+    <string name="clear_history">حذف تاریخچه</string>
+
+    <string name="clear_filter">حذف فیلتر</string>
+
+    <string name="about_us">درباره ما</string>
+
+    <string name="contact_us">تماس با ما</string>
+
+    <string name="request_password_reset">بازیابی گذرواژه</string>
+
+    <string name="set_new_password">تنظیم گذرواژه جدید</string>
+
+    <string name="forget_pass_desc">ایمیلتو وارد کن و تایید کن</string>
+
+    <string name="forget_pass_pin_desc">کدی که برات ایمیل شده رو وارد کن</string>
+
+    <string name="enter_pin">کد دریافتی</string>
+
+    <string name="now_you_can_enter_new_password">حالا رمز جدیدت رو وارد کن</string>
+
+    <string name="saved_Address">آدرس های ذخیره شده</string>
+
+    <string name="billing_address">آدرس صورتحساب</string>
+
+    <string name="please_add_address">لطفا آدرس خود را اضافه کنید</string>
+
+    <string name="add_billing_address">افزودن آدرس صورتحساب</string>
+
+    <string name="add_shipping_address">افزودن آدرس حمل و نقل</string>
+
+    <string name="add">افزودن</string>
+
+    <string name="shipping_address">آدرس حمل و نقل</string>
+
+    <string name="first_name">نام</string>
+
+    <string name="last_name">نام خانوادگی</string>
+
+    <string name="pincode">کد پستی</string>
+
+    <string name="address1">آدرس یک</string>
+
+    <string name="address2">آدرس دو</string>
+
+    <string name="remove">حذف</string>
+
+    <string name="edit">ویرایش</string>
+
+    <string name="city">شهر</string>
+
+    <string name="company">شرکت</string>
+
+    <string name="phone_number">تلفن ثابت</string>
+
+    <string name="save">ذخیره</string>
+
+    <string name="cancel">لغو</string>
+
+    <string name="sure">مطمئن</string>
+
+    <string name="date_of_birth">تاریخ تولد</string>
+
+    <string name="gender">جنسیت</string>
+
+    <string name="mobile_number">تلفن همراه</string>
+
+    <string name="email_id">ایمیل</string>
+
+    <string name="change_password">تغییر گذرواژه</string>
+
+    <string name="deactive_account">غیرفعال کردن اکانت</string>
+
+    <string name="account_deactivated">اکانت غیرفعال شد</string>
+
+    <string name="thank_you">باسپاس</string>
+
+    <string name="your_order_is_placed_successfully">سفارش شما با موفقیت ثبت شد</string>
+
+    <string name="you_will_notify_in_few_momments">تا چند لحظه دیگه از طریق ایمیل و پیامک اطلاع رسانی میشود</string>
+
+    <string name="internet_not_working">لطفا اینترنت خود را چک کنید</string>
+
+    <string name="coupon_code">کد \nتخفیف</string>
+
+    <string name="old_password">گذرواژه قدیمی</string>
+
+    <string name="new_password">گذرواژه جدید</string>
+
+    <string name="enter_new_password">وارد کردن گذرواژه جدید</string>
+
+    <string name="confirm_new_password">تکرار گذرواژه جدید</string>
+
+    <string name="retype_password">تایپ مجدد گذرواژه</string>
+
+    <string name="confirm_deactivation">تایید غیرفعال سازی؟</string>
+
+    <string name="account">حساب کاربری</string>
+
+    <string name="add_new_addresses">افزودن آدرس جدید</string>
+
+    <string name="reset_your_world">ریست کردن</string>
+
+    <string name="terms_condition">شرایط &amp; ضوابط </string>
+
+    <string name="privacy_policy">حریم خصوصی</string>
+
+    <string name="follow_us">مارو دنبال کن</string>
+
+    <string name="more_about_us">درباره ما</string>
+
+    <string name="name">نام</string>
+
+    <string name="contact_number">شماره تماس</string>
+
+    <string name="subject">موضوع</string>
+
+    <string name="message">پیام</string>
+
+    <string name="send">ارسال</string>
+
+    <string name="rate_and_review_products">بر اساس تجربتون به این محصول امتیاز بدید</string>
+
+    <string name="order">سفارش</string>
+
+    <string name="product">محصول</string>
+
+    <string name="total">جمع کل</string>
+
+    <string name="order_detail">جزئیات سفارش</string>
+
+    <string name="sub_total"></string>
+
+    <string name="shipping">حمل و نقل</string>
+
+    <string name="payment_method">شیوه پرداخت</string>
+
+    <string name="customer_detail">جزئیات مشتری</string>
+
+    <string name="phone">تلفن</string>
+
+    <string name="cancel_order">لغو سفارش</string>
+
+    <string name="claer">حذف</string>
+
+    <string name="this_permentantly_clear_you_history">به صورت کامل تاریخچه جستجوهای شما پاک خواهد  شد!</string>
+
+
+    <string name="address_updated_successfully">آدرس با موفقیت بروزرسانی شد</string>
+
+    <string name="information_updated_successfully">اطلاعات با موفقیت بروزرسانی شد</string>
+
+    <string name="my_wish_list">علاقه مندی</string>
+
+    <string name="notification">اعلان ها</string>
+
+    <string name="price_detail">جزئیات قیمت</string>
+
+    <string name="price">قیمت</string>
+
+    <string name="amount_payable">قابل پرداخت</string>
+
+    <string name="view_price_detail">مشاهده جزئیات قیمت</string>
+
+    <string name="continue_">ثبت سفارش</string>
+
+    <string name="sort_by">مرتب سازی</string>
+
+    <string name="filter">فیلتر</string>
+
+    <string name="color">رنگ</string>
+
+    <string name="done">تایید</string>
+
+    <string name="quick_overview">معرفی اجمالی:</string>
+
+    <string name="more">بیشتر</string>
+
+    <string name="comment">دیدگاه ها</string>
+
+    <string name="review">نقد و بررسی</string>
+
+    <string name="submit">تایید</string>
+
+    <string name="please_apply_rating">امتیاز بدید</string>
+
+    <string name="detail">جزئیات</string>
+
+    <string name="product_highlight"></string>
+
+    <string name="delete_all">حذف  همه</string>
+    <string name="sign_out">خروج از حساب کاربری</string>
+
+    <string name="do_you_really_want_to_signout">مطمئنی؟ میخوای خارج بشی؟</string>
+
+    <string name="sign_up_desc">همین حالا ثبت نام کن و 15% تخفیف بگیر</string>
+
+    <string name="sign_in_now"><u>از اینجا وارد شو</u></string>
+
+    <string name="already_account">قبلا ثبت نام کردی؟</string>
+
+    <string name="new_user_register_now"><u>عضو نشدید؟ از اینجا میتونی ثبت نام کنی</u></string>
+
+    <string name="rate_write_review">امتیاز بده و نظرت رو بنویس</string>
+
+    <string name="check_all_review">همه نظرات</string>
+
+    <string name="add_to_Cart">افزودن به سبد خرید</string>
+
+    <string name="buy_now">ثبت نهایی</string>
+
+    <string name="sold_by">فروش توسط</string>
+
+    <string name="contact_seller">مشخصات فروشنده</string>
+
+    <string name="other_products_from_this_vendor">سایر محصولات فروشنده</string>
+
+    <string name="review_for_this_vendor">دیدگاه ها در مورد این فروشنده</string>
+
+    <string name="all_category">دسته بندی ها</string>
+
+    <string name="Seller_Information">اطلاعات فروشنده</string>
+
+    <string name="continue_shopping">ادامه خرید</string>
+
+    <string name="login_with_facebook">فیسبوک</string>
+
+    <string name="login_with_google">گوگل پلاس</string>
+
+    <string name="sign_in">ورود</string>
+
+    <string name="sign_up">ثبت نام</string>
+
+    <string name="user_name">نام کاربری</string>
+
+    <string name="password">گذرواژه</string>
+
+    <string name="forgot_password">فراموشی گذرواژه</string>
+
+    <string name="email">ایمیل</string>
+
+    <string name="confirm_password">تکرار گذرواژه</string>
+
+    <string name="login">ورود</string>
+
+    <string name="view_store">مشاهده فروشگاه</string>
+
+    <string name="view_detail">مشاهده جزئیات</string>
+
+    <string name="hint_ok">تایید</string>
+
+    <string name="hint_cancel">لغو</string>
+
+    <string name="enter_email_address">ایمیل خود را وارد کنید</string>
+
+    <string name="enter_password">گذرواژه</string>
+
+    <string name="enter_confirm_password">تکرار گذرواژه</string>
+
+    <string name="password_and_confirm_password_not_matched">گذرواژه ها مطابقت ندارن</string>
+
+    <string name="enter_valid_email_address">لطفا ایمیل خود را صحیح وارد کنید</string>
+
+    <string name="enter_username">نام کاربری</string>
+
+    <string name="enter_proper_detail">لطفا اطلاعات مناسب وارد کنید</string>
+
+    <string name="something_went_wrong">خطایی رخ داده است</string>
+
+    <string name="enter_name">نام</string>
+
+    <string name="enter_subject">موضوع</string>
+
+    <string name="enter_message">پیام</string>
+
+    <string name="enter_contact_number">شماره تماس</string>
+
+    <string name="message_sent_successfully">با موفقیت ارسال شد</string>
+
+    <string name="something_went_wrong_try_after_somtime">خطایی رخ داده، مجدد امتحان کنید</string>
+
+    <string name="coupon_code_is_copied_to_clipboard">کوپن تخفیف کپی شد</string>
+
+    <string name="delivered_soon">به زودی</string>
+
+    <string name="order_is_in_pending_state">سفارش در دست بررسی است</string>
+
+    <string name="order_is_under_processing">سفارش در حال انجام است</string>
+
+    <string name="order_is_on_hold">سفارش آماده شد</string>
+
+    <string name="delivered">سفارش تکمیل و تحویل شد</string>
+
+    <string name="order_is_cancelled">سفارش لغو شد</string>
+
+    <string name="you_are_refunded_for_this_order">هزینه به حساب شما عودت می شود</string>
+
+    <string name="order_is_failed">سفارش با مشکل مواجه شده است</string>
+
+    <string name="go_to_cart">سبد خرید</string>
+
+    <string name="drawer_open">باز</string>
+
+    <string name="drawer_close">بسته</string>
+
+    <string name="coupon_codes">کوپن تخفیف</string>
+
+    <string name="scratch_here_to_get_scratch_coupon">برای دریافت کوپن، اینجا را بخراشید</string>
+
+    <string name="my_points">امتیازهای من</string>
+
+    <string name="event">رویداد</string>
+
+    <string name="date">تاریخ</string>
+
+    <string name="points">امتیاز ها</string>
+
+    <string name="you_have_points">امتیاز های شما</string>
+
+    <string name="only">فقط</string>
+
+    <string name="quntity_is_avilable">موجود</string>
+
+    <string name="my_point">امتیاز های من</string>
+
+    <string name="no_points_earned">امیتازی ندارید متاسفانه</string>
+
+    <string name="purchase_product_and_erned_pointa">با هر خرید امتیاز بگیرید و با امتیاز ها رایگان خرید کنید</string>
+
+    <string name="availability"></string>
+
+    <string name="no_data_found">چیزی پیدا نشد</string>
+
+    <string name="my_cart">سبد من</string>
+
+    <string name="my_wishlist">علاقه مندی</string>
+
+    <string name="my_account">حساب کاربری</string>
+
+    <string name="shop_now">خرید</string>
+
+    <string name="newest_first">جدیدترین ها</string>
+
+    <string name="rating">امیتاز</string>
+
+    <string name="popularity">محبوب ترین ها</string>
+
+    <string name="low_to_high">قیمت -- کم به زیاد</string>
+
+    <string name="high_to_low">قیمت -- زیاد به کم</string>
+
+    <string name="cart">سبد خرید</string>
+
+    <string name="cart_empty">سبد خرید شما خالی است</string>
+
+    <string name="items">عدد</string>
+
+    <string name="no_product_available">محصولی یافت نشد!</string>
+
+    <string name="browse_our_store_and_take_a_look_at_other_items_to_buy">با لمس دکمه زیر به صفحه اصلی برگرد</string>
+
+    <string name="no_coupon_found">کوپنی یافت نشد</string>
+
+    <string name="in_stock">موجود</string>
+
+    <string name="out_of_stock">ناموجود</string>
+
+    <string name="exit_from_app">شما از برنامه خارج شدید</string>
+
+    <string name="permission_need">لطفا این دسترسی را به برنامه بدهید</string>
+
+    <string name="add_photo">افزودن عکس</string>
+
+    <string name="take_photo">گرفتن عکس</string>
+
+    <string name="choose_from_library">انتخاب از گالری</string>
+
+    <string name="log_out_success">با موفقیت انجام شد</string>
+
+    <string name="scratch_here_to_get_coupon_code">اینجا را بخراشید تا کوپن نمایان شود</string>
+
+    <string name="no_product_found">محصولی پیدا نشد</string>
+
+    <string name="no_notification_yet"></string>
+
+    <string name="quick_overviews">نقد و بررسی</string>
+
+    <string name="rate_product">محصولات ویژه</string>
+
+    <string name="your_review_is_waiting_for_approval">دیدگاه شما در انتظار تایید است</string>
+
+    <string name="item_added_to_your_cart">به سبد خرید شما اضافه شد</string>
+
+    <string name="variation_not_available">این انتخاب موجود نیست</string>
+
+    <string name="combition_doesnt_exist">لطفا گزینه دیگری انتخاب کنید</string>
+
+    <string name="or_sign_up_with"></string>
+
+    <string name="no_order_found">سفارش پیدا نشد</string>
+
+    <string name="on"></string>
+
+    <string name="order_id">شماره سفارش-#</string>
+
+    <string name="was_place_on"></string>
+
+    <string name="and_currently"></string>
+
+    <string name="version">نسخه :</string>
+
+    <string name="expiration">انتقضا</string>
+
+    <string name="remaining">یادآوری :</string>
+
+    <string name="download">دانلود</string>
+
+    <string name="download_complete">دانلود با موفقیت انجام شد</string>
+
+    <string name="expire">انقضا :</string>
+
+    <string name="search_list_empty">اینجا میتونی هر چیزی رو پیدا کنی</string>
+
+    <string name="exitformapp">برای خروج مجدد برگشت را بزنید</string>
+
+    <string name="featureProducts">محصولات ویژه</string>
+
+    <string name="combition">این ترکیب در دسترس نیست، لطفا ترکیب دیگری را انتخاب کنید</string>
+
+    <string name="top_rated_product">محبوب ترین کالاها</string>
+
+    <string name="blog">بلاگ</string>
+
+    <string name="addwhatsappnumber">شماره تماس واتس اپ خود را وارد کنید</string>
+
+    <string name="firstname">نام</string>
+
+    <string name="lastname">نام خانوادگی</string>
+
+    <string name="country">کشور</string>
+
+    <string name="street_address">آدرس دقیق</string>
+
+    <string name="state">استان</string>
+
+    <string name="postalcode">کد پستی</string>
+
+    <string name="place_order">ترتیب سفارش</string>
+
+    <string name="select_country">لطفا کشور را انتخاب کنید</string>
+
+    <string name="select_state">لطفا استان را انتخاب کنید</string>
+
+    <string name="cod">پرداخت درب منزل</string>
+
+    <string name="codpay">پرداخت با پول نقد درب منزل</string>
+
+    <string name="paypal">پرداخت آنلاین</string>
+
+    <string name="paypalpay">آنلاین پرداخت کنید و امتیاز بگیرید</string>
+
+    <string name="find_store">پیدا کردن</string>
+
+    <string name="intro_one">پرداخت سریع با خیالی آسوده</string>
+
+    <string name="title_intro_one">پرداخت آنلاین</string>
+
+    <string name="title_intro_two">24/7</string>
+
+    <string name="intro_two">24 ساعته فعال و در دسترس</string>
+
+    <string name="title_intro_three">صرفه جویی</string>
+
+    <string name="intro_three">صرفه جویی در زمان و هزینه</string>
+
+    <string name="skip">رد شدن</string>
+
+    <string name="next">بعدی</string>
+
+    <string name="home">اصلی</string>
+
+    <string name="info">اطلاعات</string>
+
+    <string name="sales_end_in"></string>
+
+    <string name="searchs" tools:ignore="MissingTranslation">دسته بندی</string>
+
+    <string name="browse_item">با لمس دکمه زیر به فروشگاه برگرد</string>
+    <string name="simply_browse_item"></string>
+    <string name="wish_list_no_data">با لمس دکمه زیر به فروشگاه برگرد</string>
+
+    <string name="review_verify">متاسفانه شما نمی تونید امتیاز ثبت کنید</string>
+
+    <string name="resend_otp">Resend OTP</string>
+
+    <string name="validate_otp">Validate OTP</string>
+
+    <string name="enter_otp">Enter OTP</string>
+
+    <string name="please_type_verification_code_sent_to_in">Please type verification code sent to</string>
+
+    <string name="enter_verificiation_code">Enter Verification Code</string>
+
+    <string name="otp_sent_again">Otp is sent again on</string>
+
+    <string name="invalid_phone_number">Invalid phone number.</string>
+
+    <string name="quoto_exceeded">Quota exceeded.</string>
+
+    <string name="available_text">Available at</string>
+
+    <string name="cod_available_msg">Available</string>
+
+    <string name="cod_data_label">Cash On Delivery</string>
+
+    <string name="cod_help_text">Cash On Delivery</string>
+
+    <string name="cod_not_available_msg">Not Available</string>
+
+    <string name="del_data_label">Cash On Delivery</string>
+
+    <string name="del_help_text">Delivery Date Help Text</string>
+
+    <string name="del_saturday">1</string>
+
+    <string name="del_sunday">1</string>
+
+    <string name="error_msg_blank">Pincode should not be blank.</string>
+
+    <string name="error_msg_check_pincode">Please Enter Valid Pincode</string>
+    <string name="my_wallet">کیف پول</string>
+    <string name="pincode_placeholder_txt">Enter Your Pincode</string>
+    <string name="no_wallet_transection">Empty Transection list</string>
+    <string name="add_transection">Credit or debit ammount in wallet</string>
+    <string name="addtransection">Add Transaction</string>
+    <string name="order_cancel">ORDER CANCELED</string>
+    <string name="your_order_is_canceled">Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction.</string>
+    <string name="check">Check</string>
+
+</resources>

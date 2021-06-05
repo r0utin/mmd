@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "comm.hyperonline.techsh"
+        minSdkVersion 17
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [onesignal_app_id               : "c0d4eb82-6c02-4852-9561-1206e08a1ef2",
+                                onesignal_google_project_number: "REMOTE"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+configurations {
+    all {
+        exclude module: 'httpclient'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    // butterKnife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'org.scribe:scribe:1.3.7'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+    implementation 'com.kenilt.loopingviewpager:loopingviewpager:0.2.0'
+//    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+//    implementation 'com.google.android.gms:play-services-location:17.0.0'
+//    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+//    implementation 'com.google.firebase:firebase-dynamic-links:19.1.0'
+//    implementation 'com.google.firebase:firebase-appindexing:19.1.0'
+//    implementation 'com.google.firebase:firebase-auth:19.3.1'
+//    implementation 'com.google.firebase:firebase-messaging:20.1.6'
+//    implementation 'com.google.firebase:firebase-crash:16.2.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'org.sufficientlysecure:html-textview:3.6'
+//    implementation 'com.onesignal:OneSignal:3.12.2@aar'
+//    implementation 'com.facebook.android:facebook-android-sdk:5.5.1'
+    implementation 'com.pixplicity.easyprefs:library:1.9.0'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation 'com.github.joielechong:countrycodepicker:2.2.0'
+//    implementation files('libs\\full.jar')
+    implementation 'com.android.volley:volley:1.1.1'
+    testImplementation 'junit:junit:4.13-beta-3'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    // date converter
+    implementation 'ir.huri:JalaliCalendar:1.3.3'
+    implementation 'com.github.eloyzone:jalali-calendar:1.0.0'
+
+    implementation 'com.pushpole.android:pushsdk:1.7.1'
+
+    implementation "com.airbnb.android:lottie:3.7.0"
+}
+//apply plugin: 'com.google.gms.google-services'

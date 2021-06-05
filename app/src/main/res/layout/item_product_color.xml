@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/asd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <comm.hyperonline.techsh.utils.AdvancedView
+        android:id="@+id/advancedView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <comm.hyperonline.techsh.customview.textview.TextViewRegular
+        android:id="@+id/tvName"
+        style="@style/txt_gray_small"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="@dimen/value_2"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/advancedView"
+        app:layout_constraintStart_toEndOf="@+id/guideline41"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play" />
+
+    <comm.hyperonline.techsh.utils.AdvancedView
+        android:id="@+id/advancedView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:colors="#17FEFEFE"
+        app:layout_constraintBottom_toBottomOf="@+id/flTransparent"
+        app:layout_constraintEnd_toEndOf="@+id/flTransparent"
+        app:layout_constraintStart_toStartOf="@+id/flTransparent"
+        app:layout_constraintTop_toTopOf="@+id/flTransparent" />
+
+    <FrameLayout
+        android:id="@+id/flTransparent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/tvName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline42"
+        app:layout_constraintTop_toTopOf="@+id/guideline39">
+
+        <ImageView
+            android:id="@+id/tik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_right_white" />
+
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

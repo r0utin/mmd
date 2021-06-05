@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/ivBack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/value_8"
+                                android:layout_marginLeft="@dimen/value_8"
+                                android:layout_marginEnd="@dimen/value_1"
+                                android:layout_marginRight="@dimen/value_1"
+                                android:tint="#000000"
+                                app:srcCompat="@drawable/ic_baseline_close" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/flCart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/value_5"
+                                android:layout_marginEnd="@dimen/value_4"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/ivCart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="@dimen/value_2"
+                                    android:layout_marginRight="@dimen/value_2"
+                                    android:tint="#000000"
+                                    android:visibility="visible"
+                                    app:srcCompat="@drawable/ic_shopping_cart_white" />
+
+                                <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                    android:id="@+id/tvToolCart"
+                                    style="@style/txt_white_micro"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|top"
+                                    android:layout_marginTop="@dimen/value_3"
+                                    android:background="@drawable/red_light_round_corner_button"
+                                    android:maxLines="1"
+                                    android:paddingStart="@dimen/value_3"
+                                    android:paddingLeft="@dimen/value_3"
+                                    android:paddingTop="@dimen/value_1.5"
+                                    android:paddingEnd="@dimen/value_3"
+                                    android:paddingRight="@dimen/value_3"
+                                    android:paddingBottom="@dimen/value_1.5"
+                                    android:text="1"
+                                    android:textAlignment="viewEnd"
+                                    android:textDirection="locale" />
+                            </FrameLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/linearLayout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|end"
+                                android:clipChildren="false"
+                                android:clipToPadding="false">
+
+
+                                <comm.hyperonline.techsh.customview.like.animation.SparkButton
+                                    android:id="@+id/ivWishList"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:visibility="visible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintDimensionRatio="h,1:1"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:sparkbutton_activeImage="@drawable/ic_baseline_favorite_24"
+                                    app:sparkbutton_iconSize="26dp"
+                                    app:sparkbutton_inActiveImage="@drawable/ic_favorite_one" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/value_8"
+                                android:layout_marginRight="@dimen/value_5">
+
+                                <ImageView
+                                    android:id="@+id/ivShare"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:tint="#000000"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintDimensionRatio="0.9:2"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/ic_share_gray" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="72dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/llMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:id="@+id/nsScroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/spe"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintDimensionRatio="1:0.1"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <View
+                                            android:id="@+id/divider2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="2dp"
+                                            android:layout_marginStart="20dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginEnd="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:background="@color/red"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent" />
+
+                                        <ImageView
+                                            android:id="@+id/textView6"
+                                            android:layout_width="0dp"
+                                            android:layout_height="0dp"
+                                            android:tint="@color/red"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintDimensionRatio="4:1"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/ic_spec_2" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/frameLayout2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginBottom="7dp">
+
+                                    <androidx.constraintlayout.widget.Guideline
+                                        android:id="@+id/guideline34"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        app:layout_constraintGuide_percent="0.9" />
+
+                                    <androidx.constraintlayout.widget.Guideline
+                                        android:id="@+id/guideline37"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        app:layout_constraintGuide_percent="0.95" />
+
+                                    <androidx.viewpager.widget.ViewPager
+                                        android:id="@+id/vpProductImages"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintDimensionRatio="2:1.5"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <com.rd.PageIndicatorView
+                                        android:id="@+id/pageIndicatorView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+                                        app:layout_constraintEnd_toEndOf="@+id/guideline37"
+                                        app:piv_animationType="scale"
+                                        app:piv_dynamicCount="true"
+                                        app:piv_interactiveAnimation="true"
+                                        app:piv_selectedColor="@color/gray"
+                                        app:piv_unselectedColor="#2C000000"
+                                        app:piv_viewPager="@id/vpProductImages"
+                                        attrs:piv_padding="7dp"
+                                        attrs:piv_radius="5dp" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/llColor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/value_5"
+                                        android:paddingTop="@dimen/value_5"
+                                        android:visibility="gone">
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rvColor"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.8"
+                                            android:orientation="vertical"
+                                            android:paddingTop="@dimen/value_5">
+
+
+                                        </androidx.recyclerview.widget.RecyclerView>
+
+                                        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                            android:layout_width="@dimen/value_0.5"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="@dimen/value_8"
+                                            android:layout_marginLeft="@dimen/value_8"
+                                            android:layout_marginTop="@dimen/value_2"
+                                            android:layout_marginEnd="@dimen/value_8"
+                                            android:layout_marginRight="@dimen/value_8"
+                                            android:layout_marginBottom="@dimen/value_2"
+                                            android:background="@color/gray" />
+
+                                        <LinearLayout
+                                            android:id="@+id/llDialog"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.15"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                app:srcCompat="@drawable/ic_color_variation" />
+
+                                            <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                android:id="@+id/tvColor"
+                                                style="@style/txt_gray_micro"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="@dimen/value_2"
+                                                android:gravity="center"
+                                                android:padding="@dimen/value_2"
+                                                android:text="4 color" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="vertical">
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:id="@+id/linearLayout4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/white"
+                                            android:paddingLeft="20dp"
+                                            android:paddingRight="20dp"
+                                            android:paddingBottom="12dp"
+                                            android:visibility="visible">
+
+
+                                            <TextView
+                                                android:id="@+id/name"
+                                                style="@style/txt_black_smalls"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="7dp"
+                                                android:layout_marginStart="8dp"
+                                                android:text="نام محصول"
+                                                android:textColor="#00B8D4"
+                                                app:layout_constraintEnd_toEndOf="@+id/tvProductName"
+                                                app:layout_constraintHorizontal_bias="0.0"
+                                                app:layout_constraintStart_toStartOf="@+id/tvProductName"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <comm.hyperonline.techsh.customview.textview.TextViewBold
+                                                android:id="@+id/tvProductName"
+                                                style="@style/txt_black_medium"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="1dp"
+                                                android:gravity="end"
+                                                android:text="علو"
+                                                android:textAlignment="viewStart"
+                                                android:textDirection="locale"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                                            <comm.hyperonline.techsh.customview.MaterialRatingBar
+                                                android:id="@+id/ratingBar"
+                                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="16dp"
+                                                android:layout_marginBottom="16dp"
+                                                android:isIndicator="true"
+                                                android:rating="0"
+                                                android:rotationY="180"
+                                                android:stepSize="0.5"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/tvProductName"
+                                                attrs:mrb_fillBackgroundStars="true"
+                                                attrs:mrb_progressBackgroundTint="@color/star_color"
+                                                attrs:mrb_progressTint="@color/yello" />
+
+                                            <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                android:id="@+id/rateSize"
+                                                style="@style/txt_gray_micro"
+                                                android:layout_width="0dp"
+                                                android:layout_height="0dp"
+                                                android:layout_marginEnd="4dp"
+                                                android:gravity="center|end"
+                                                android:text="(0)"
+                                                android:textColor="@color/gray_light"
+                                                app:autoSizeTextType="uniform"
+                                                app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+                                                app:layout_constraintDimensionRatio="3:1"
+                                                app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+                                                app:layout_constraintTop_toTopOf="@+id/ratingBar" />
+
+                                            <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                android:id="@+id/txtWholesalePrice"
+                                                style="@style/txt_gray_micro"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="12dp"
+                                                tools:text="قیمت همکار: 1000 تومان"
+                                                android:textColor="@color/gray_dark"
+                                                android:visibility="gone"
+                                                android:textSize="11sp"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/llProductVariation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/value_5"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:visibility="gone">
+
+                                        <View
+                                            android:id="@+id/divider"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:background="#ECECEC" />
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rvVariation"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:paddingBottom="@dimen/value_4">
+
+                                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="7dp"
+                                        android:background="#ECECEC" />
+
+                                    <LinearLayout
+                                        android:id="@+id/llPincode"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/value_5"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="@dimen/value_5"
+                                        android:visibility="visible"
+                                        tools:visibility="gone">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+
+                                            <comm.hyperonline.techsh.customview.edittext.EditTextRegular
+                                                android:id="@+id/etPincode"
+                                                style="@style/txt_gray_medium"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="start"
+                                                android:layout_marginRight="@dimen/value_5"
+                                                android:layout_weight="1"
+                                                android:hint="@string/pincode"
+                                                android:paddingBottom="@dimen/value_8"
+                                                android:singleLine="true"
+                                                android:textAlignment="viewStart"
+                                                android:textDirection="locale"
+                                                android:theme="@style/Theme.App.Base" />
+
+
+                                            <comm.hyperonline.techsh.customview.textview.TextViewBold
+                                                android:id="@+id/tvCheck"
+                                                style="@style/txt_white_medium"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:background="@color/colorPrimary"
+                                                android:padding="@dimen/value_5"
+                                                android:text="@string/check" />
+
+                                        </LinearLayout>
+
+                                        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                            android:id="@+id/tvDeliverable"
+                                            style="@style/txt_black_micro"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_2"
+                                            android:layout_marginLeft="@dimen/value_2"
+                                            android:layout_marginTop="@dimen/value_2"
+                                            android:text=""
+                                            android:textAlignment="viewStart"
+                                            android:textDirection="locale"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/llRelatedItem"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:visibility="visible">
+
+                                        <include layout="@layout/dynamic_related_product" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="7dp"
+                                            android:background="#ECECEC" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/llInfo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/bg"
+                                        android:orientation="vertical"
+                                        android:visibility="visible">
+
+                                        <include layout="@layout/dynamic_info" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#ECECEC"
+                                            android:layout_marginRight="@dimen/value_8"
+                                            android:layout_marginLeft="@dimen/value_8"/>
+
+                                    </LinearLayout>
+
+                                    <comm.hyperonline.techsh.customview.textview.TextViewLight
+                                        android:id="@+id/tvReward"
+                                        style="@style/txt_gray_small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="@dimen/value_10"
+                                        android:layout_marginLeft="@dimen/value_10"
+                                        android:layout_marginTop="@dimen/value_3"
+                                        android:layout_marginEnd="@dimen/value_10"
+                                        android:layout_marginRight="@dimen/value_10"
+                                        android:layout_marginBottom="@dimen/value_3"
+                                        android:alpha="0.9"
+                                        android:background="@color/white"
+                                        android:gravity="start|center"
+                                        android:padding="@dimen/value_5"
+                                        android:visibility="gone" />
+
+
+                                    <LinearLayout
+                                        android:id="@+id/llIsSeller"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/value_5"
+                                        android:layout_marginBottom="@dimen/value_5"
+                                        android:background="@color/bg"
+                                        android:orientation="vertical"
+                                        android:visibility="gone">
+
+                                        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                            style="@style/txt_black_medium"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/white"
+                                            android:gravity="start"
+                                            android:padding="@dimen/value_5"
+                                            android:text="@string/Seller_Information"
+                                            android:textAlignment="viewStart"
+                                            android:textDirection="locale" />
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/value_10"
+                                                android:background="@color/white" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginStart="@dimen/value_5"
+                                                android:layout_marginLeft="@dimen/value_5"
+                                                android:layout_marginEnd="@dimen/value_5"
+                                                android:layout_marginRight="@dimen/value_5"
+                                                android:background="@color/white"
+                                                android:elevation="@dimen/value_2"
+                                                android:orientation="horizontal">
+
+                                                <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                    android:layout_width="@dimen/value_0.5"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@color/gray_table" />
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.99"
+                                                    android:orientation="vertical">
+
+                                                    <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/value_0.5"
+                                                        android:background="@color/gray_table" />
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:orientation="vertical"
+                                                        android:padding="@dimen/value_5">
+
+                                                        <LinearLayout
+                                                            android:id="@+id/llSoldBy"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginTop="@dimen/value_3"
+                                                            android:orientation="horizontal">
+
+                                                            <comm.hyperonline.techsh.customview.textview.TextViewLight
+                                                                style="@style/txt_gray_micro"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_marginTop="@dimen/value_1"
+                                                                android:layout_marginBottom="@dimen/value_1"
+                                                                android:text="@string/sold_by" />
+
+
+                                                            <comm.hyperonline.techsh.customview.textview.TextViewLight
+                                                                android:id="@+id/tvSellerName"
+                                                                style="@style/txt_color_primary_small"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_marginStart="@dimen/value_5"
+                                                                android:layout_marginLeft="@dimen/value_5"
+                                                                android:layout_marginTop="@dimen/value_1"
+                                                                android:layout_marginBottom="@dimen/value_1"
+                                                                android:text="" />
+                                                        </LinearLayout>
+
+
+                                                        <org.sufficientlysecure.htmltextview.HtmlTextView
+                                                            android:id="@+id/tvSellerContent"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:maxLines="3"
+                                                            android:paddingTop="@dimen/value_5"
+                                                            android:paddingBottom="@dimen/value_5"
+                                                            android:visibility="gone" />
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="horizontal">
+
+                                                            <comm.hyperonline.techsh.customview.textview.TextViewLight
+                                                                android:id="@+id/tvSellerMore"
+                                                                style="@style/txt_color_primary_small"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_gravity="start|center"
+                                                                android:gravity="center"
+                                                                android:text="@string/more" />
+
+                                                            <ImageView
+                                                                android:id="@+id/ivMoreSeller"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="match_parent"
+                                                                android:layout_gravity="center"
+                                                                app:srcCompat="@drawable/ic_go_primary" />
+
+                                                        </LinearLayout>
+
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginTop="@dimen/value_5"
+                                                            android:layout_marginBottom="@dimen/value_2"
+                                                            android:orientation="horizontal">
+
+                                                            <LinearLayout
+                                                                android:layout_width="0dp"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_weight="0.5">
+
+                                                                <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                                    android:id="@+id/tvContactSeller"
+                                                                    style="@style/txt_white_small"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:background="@drawable/primary_round_corner_button"
+                                                                    android:paddingStart="@dimen/value_8"
+                                                                    android:paddingLeft="@dimen/value_8"
+                                                                    android:paddingTop="@dimen/value_4"
+                                                                    android:paddingEnd="@dimen/value_8"
+                                                                    android:paddingRight="@dimen/value_8"
+                                                                    android:paddingBottom="@dimen/value_4"
+                                                                    android:text="@string/contact_seller" />
+                                                            </LinearLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="0dp"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_gravity="end"
+                                                                android:layout_weight="0.5"
+                                                                android:gravity="end">
+
+                                                                <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                                    android:id="@+id/tvViewStore"
+                                                                    style="@style/txt_white_small"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:background="@color/black"
+                                                                    android:paddingStart="@dimen/value_8"
+                                                                    android:paddingLeft="@dimen/value_8"
+                                                                    android:paddingTop="@dimen/value_4"
+                                                                    android:paddingEnd="@dimen/value_8"
+                                                                    android:paddingRight="@dimen/value_8"
+                                                                    android:paddingBottom="@dimen/value_4"
+                                                                    android:text="@string/view_store" />
+                                                            </LinearLayout>
+
+
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+
+                                                    <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/value_0.5"
+                                                        android:background="@color/gray_table" />
+
+
+                                                </LinearLayout>
+
+                                                <comm.hyperonline.techsh.customview.textview.TextViewRegular
+                                                    android:layout_width="@dimen/value_0.5"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@color/gray_table" />
+                                            </LinearLayout>
+
+
+                                        </FrameLayout>
+
+
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rvGroupProduct"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/value_10"
+                                        android:layout_marginLeft="@dimen/value_10"
+                                        android:layout_marginTop="@dimen/value_5"
+                                        android:layout_marginEnd="@dimen/value_10"
+                                        android:layout_marginRight="@dimen/value_10"
+                                        android:layout_marginBottom="@dimen/value_5"
+                                        android:background="@drawable/white_gray_strok_button"
+                                        android:visibility="gone">
+
+                                    </androidx.recyclerview.widget.RecyclerView>
+
+                                    <LinearLayout
+                                        android:id="@+id/llQuickOverView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:visibility="visible">
+
+                                        <include layout="@layout/dynamic_tozihat" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:background="#ECECEC"
+                                            android:layout_marginRight="@dimen/value_8"
+                                            android:layout_marginLeft="@dimen/value_8"/>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/llProductDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        tools:visibility="visible">
+
+                                        <include layout="@layout/dynamic_joziyat" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#ECECEC" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/llReview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:elevation="@dimen/value_1"
+                                        android:orientation="vertical"
+                                        android:visibility="visible">
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="7dp"
+                                            android:background="#ECECEC" />
+
+                                        <include layout="@layout/dynamic_nazar" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:background="#ECECEC" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.core.widget.NestedScrollView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/sh1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_weight="1"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_weight="1"
+        app:layout_anchor="@id/llAddToCart">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow_2" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/gray_light"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline33"
+            app:layout_constraintEnd_toEndOf="@+id/guideline36"
+            app:layout_constraintStart_toEndOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline32">
+
+            <comm.hyperonline.techsh.customview.textview.TextViewBold
+                android:id="@+id/tvMojod"
+                style="@style/txt_white_medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="ناموجود"
+                tools:layout_conversion_absoluteHeight="54dp"
+                tools:layout_conversion_absoluteWidth="206dp" />
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline35"
+            app:layout_constraintDimensionRatio="1.5:1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline36"
+            app:layout_constraintTop_toTopOf="@+id/guideline32">
+
+            <comm.hyperonline.techsh.utils.AdvancedView
+                android:id="@+id/ivDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                app:colors="#DD2C00" />
+
+            <TextView
+                android:id="@+id/tvDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="20%"
+                android:textColor="#FFFFFF"
+                app:autoSizeTextType="uniform" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/cubicon"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="#000000"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline33"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline36"
+            app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+            android:id="@+id/tvPrice1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|end"
+            android:text="115,000"
+            android:textColor="#000000"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline33"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/guideline22"
+            app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center|end"
+            android:text="150,000"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline35"
+            app:layout_constraintEnd_toStartOf="@+id/fl"
+            app:layout_constraintStart_toEndOf="@+id/guideline22"
+            app:layout_constraintTop_toTopOf="@+id/guideline32" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="#DD2C00"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline33"
+            app:layout_constraintEnd_toEndOf="@+id/guideline22"
+            app:layout_constraintStart_toEndOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline32">
+
+            <comm.hyperonline.techsh.customview.textview.TextViewBold
+                android:id="@+id/tvCart"
+                style="@style/txt_white_mediums"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/add_to_Cart"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="206dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.18" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.48" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="cardView23"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="textView5,tvPrice1,tvPrice,cardView2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

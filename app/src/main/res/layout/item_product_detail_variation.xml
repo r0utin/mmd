@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <comm.hyperonline.techsh.customview.textview.TextViewRegular
+        android:id="@+id/tvTitle"
+        style="@style/txt_color_primary_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="@dimen/value_4"
+        android:paddingEnd="@dimen/value_8"
+        android:paddingRight="20dp"
+        android:paddingBottom="@dimen/value_4"
+        android:text="@string/color"
+        android:textAlignment="viewStart"
+        android:textDirection="locale" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProductVariation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrate_code_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/reward3"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="1dp"
+    app:contentPadding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:theme="@style/TextLabegray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <comm.hyperonline.techsh.customview.edittext.EditTextRegular
+                android:id="@+id/edt_code_dialog"
+                style="@style/txt_gray_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:hint="کد فعال سازی"
+                android:gravity="center"
+                android:inputType="text"
+                android:paddingBottom="@dimen/value_8"
+                android:singleLine="true"
+                android:textDirection="locale"
+                android:theme="@style/Theme.App.Base" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        <comm.hyperonline.ciyashop.customview.edittext.EditTextRegular-->
+        <!--            android:id="@+id/edt_code_dialog"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="8dp"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_marginEnd="8dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:hint="کد فعال سازی را وارد کنید"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+            android:id="@+id/txt_timer_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilCode" />
+
+        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+            android:id="@+id/btn_code_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#027d9e"
+            android:text="تایید"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_timer_dialog" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

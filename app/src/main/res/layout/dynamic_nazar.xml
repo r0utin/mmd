@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:constraint_referenced_ids="tvRateReview,tvCheckAllReview"
+            tools:layout_editor_absoluteY="12dp" />
+
+        <comm.hyperonline.techsh.customview.textview.TextViewBold
+            android:id="@+id/tvProductName"
+            style="@style/txt_black_small"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|start"
+            android:text="نظر کاربران"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline19"
+            app:layout_constraintEnd_toEndOf="@+id/guideline17"
+            app:layout_constraintStart_toEndOf="@+id/guideline16"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+            android:id="@+id/tvCheckAllReview"
+            style="@style/txt_white_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingTop="@dimen/value_3"
+            android:paddingBottom="@dimen/value_3"
+            android:text="@string/view_all"
+            android:textColor="#00B8D4"
+            android:textDirection="locale"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline19"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline17"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+        <comm.hyperonline.techsh.customview.textview.TextViewRegular
+            android:id="@+id/tvRateReview"
+            style="@style/txt_white_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:gravity="bottom"
+            android:paddingTop="@dimen/value_3"
+            android:paddingBottom="@dimen/value_3"
+            android:text="ثبت نظر"
+            android:textColor="#00B8D4"
+            android:textDirection="locale"
+            app:layout_constraintBottom_toTopOf="@+id/guideline19"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/tvCheckAllReview"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.045" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.955" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:elevation="@dimen/value_1"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/no_nazar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/guideline46"
+                app:layout_constraintEnd_toEndOf="@+id/guideline48"
+                app:layout_constraintStart_toEndOf="@+id/guideline44"
+                app:layout_constraintTop_toTopOf="@+id/guideline45">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/cubicon"
+                    android:gravity="center"
+                    android:padding="@dimen/value_3"
+                    android:text=""
+                    android:textColor="#25000000"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline46"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toEndOf="@+id/guideline44"
+                    app:layout_constraintTop_toTopOf="@+id/guideline45" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/cubicon"
+                    android:gravity="center"
+                    android:padding="@dimen/value_3"
+                    android:text=""
+                    android:textColor="#25000000"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline46"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toEndOf="@+id/guideline44"
+                    app:layout_constraintTop_toTopOf="@+id/guideline45" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/cubicon"
+                    android:gravity="center"
+                    android:padding="@dimen/value_3"
+                    android:text=""
+                    android:textColor="#25000000"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline46"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toEndOf="@+id/guideline44"
+                    app:layout_constraintTop_toTopOf="@+id/guideline45" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/cubicon"
+                    android:gravity="center"
+                    android:padding="@dimen/value_3"
+                    android:text=""
+                    android:textColor="#25000000"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline46"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toEndOf="@+id/guideline44"
+                    app:layout_constraintTop_toTopOf="@+id/guideline45" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/cubicon"
+                    android:gravity="center"
+                    android:padding="@dimen/value_3"
+                    android:text=""
+                    android:textColor="#25000000"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline46"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toEndOf="@+id/guideline44"
+                    app:layout_constraintTop_toTopOf="@+id/guideline45" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/txt_gray_micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransans"
+                android:gravity="center"
+                android:text="نظرات در مورد این کالا را با دیگران به اشتراک بگذارید"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@+id/guideline43"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/guideline44"
+                app:layout_constraintTop_toTopOf="@+id/guideline38" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/cubicon"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#00B8D4"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRateReview2"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toEndOf="@+id/tvRateReview2"
+                app:layout_constraintTop_toTopOf="@+id/tvRateReview2" />
+
+            <TextView
+                android:id="@+id/tvRateReview2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransans"
+                android:text="ثبت نظر"
+                android:textColor="#00B8D4"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@+id/guideline45"
+                app:layout_constraintDimensionRatio="2:1"
+                app:layout_constraintStart_toEndOf="@+id/guideline44"
+                app:layout_constraintTop_toTopOf="@+id/guideline43" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.26" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.045" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.92" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
